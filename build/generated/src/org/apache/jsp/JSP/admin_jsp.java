@@ -1,10 +1,10 @@
-package org.apache.jsp;
+package org.apache.jsp.JSP;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -43,30 +43,19 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("\n");
-      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>REGISTER</title>\n");
+      out.write("        <title>JSP Page</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <form method=\"get\" action=\"\" >\n");
-      out.write("            Name:<input type=\"text\" name=\"Name\" /><br/>\n");
-      out.write("            Phone Number:<input type=\"number\" name=\"PhoneNumber\" /><br/>\n");
-      out.write("            Email:<nput type=\"email\" name=\"Email\"/><br/>\n");
-      out.write("            Password:<input type=\"password\" name=\"Password\" /><br/>\n");
-      out.write("            Registration Number:<input type=\"text\" name=\"RegNumber\" /><br/>\n");
-      out.write("            Select category:\n");
-      out.write("            <select name=\"category\" >\n");
-      out.write("                <option value=\"Transport Officer\" selected >Transport Officer\n");
-      out.write("                <option value=\"Drivrt\" >Driver\n");
-      out.write("                <option value=\"Mechanic\">Mechanic\n");
-      out.write("                <option value=\"School Official\">School Official\n");
-      out.write("                <option value=\"TTDepartment Secretary\">TTDepatment Secretary\n");
-      out.write("            </select><br />\n");
-      out.write("            <input type=\"button\" value=\"Register\" />\n");
-      out.write("                    </form>\n");
+      out.write("        <h1>Hello World!</h1>\n");
+      out.write("        <div style=\"text-align: right\">\n");
+      out.write("            <a href=\"");
+      out.print(request.getContextPath());
+      out.write("/LogoutServlet\" >Logout</a>\n");
+      out.write("        </div>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
